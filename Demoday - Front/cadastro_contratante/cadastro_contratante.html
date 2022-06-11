@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro_contratante.css">
+</head>
+<body>
+    <div class="section">
+        <div class="section_wrapper">
+            <div class="leftsection">
+                <div class="logo">
+                    <img src="/perfil_visualizado/images/Logo_Roxa.png" alt="Logo">
+                    <div class="inline_txt">
+                        <h2 class="emphasis">Crie</h2><h2>uma conta!</h2>
+                    </div>
+                    
+                </div>
+                <form action="" id="form">
+                    <div class="inline">
+                        <input type="email" class="input" name="email" id="email" placeholder="E-mail: example@example.com" required>
+                        <input type="password" class="input" name="password" id="password" placeholder="Senha: " required>
+                    </div>
+                    <div class="inline">
+                        <input type="text" class="input" id="name" placeholder="Nome: " required>
+                        <input type="text" class="input" id="lastname" placeholder="Sobrenome: " required>
+                    </div>
+                    <div class="inline">
+                        <div class="socialname_wrapper">
+                            <input type="text" class="input" id="socialname" placeholder="Nome Social: ">
+                            <a href="#" class="socialname">O que é Nome Social?</a>
+                        </div>
+                        <input type="text" class="input" id="borndate" placeholder="Data de Nascimento: " required>
+                    </div>
+                    <div class="inline">
+                        <div class="cellphone_wrapper">
+                            <div class="ddd_wrapper">
+                                <div>
+                                    <p>+</p>
+                                </div>
+                                <input type="number" id="country_code" maxlength="3" value="55" required>
+                            </div>
+                            <input type="number" name="cellphone" class="input" id="phone_num" placeholder="Número de Celular" required>
+                        </div>
+                        <div class="cep_wrapper">
+                            <input type="number" class="input" id="cep_input" maxlength="9" placeholder="CEP" required>
+                            <a href="#">Não sei meu CEP</a>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit_btn">Finalizar</button>
+                </form>
+            </div>
+        
+            <div class="rightsection">
+                <img src="/perfil_visualizado/images/foto-usuaria.jpg" alt="logon_img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
