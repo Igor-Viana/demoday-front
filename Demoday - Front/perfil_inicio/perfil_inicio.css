@@ -1,0 +1,340 @@
+/* Variáveis */
+:root {
+    --principalcolor: #7936FC;
+    --bordercolor: rgba(0, 0, 0, 0.3);
+    --buttonborderradius: 60px;
+    --buttonborder: 2px;
+    --linkcolor: #000000;
+}
+
+/* -- TODOs -- */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+};
+
+
+/* ------------------- Alinhamento e estilização ---------------- */
+/*          Divisão da pag em 2 sections            */
+.content {
+    width: 100%;
+}
+.contentwrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+.leftsection {
+    width: 25%;
+    margin:50px 100px 0 -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.leftsectionwrapper {
+    position: fixed;
+}
+*/
+.rightsection {
+    width: 60%;
+}
+.sidebtn {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+.sidebtn p {
+    align-self: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 30px;
+    padding-right: 50px;
+}
+.sidebtn img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-left: 50px;
+}
+#inicio_sidebtn {
+    background-color: #7936FC;
+    border-radius: 0 60px 60px 0;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Alinhamento e estilização da NAV */
+.navwrapper {
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.875rem;
+    
+}
+.navicon {
+    display: flex;
+}
+#searchbutton {
+    background-color: transparent;
+    border: solid 0.063rem #000000;
+    border-radius: 3.75rem;
+    width: 9.438rem;
+    height: 4.313rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.813rem;
+}
+
+
+/* Info da conta */
+.contawrapper {
+    padding: 0 12.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.infowrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.25rem;
+}
+.infocontentwrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+.infoconta {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.188rem rgba(0, 0, 0, 0.3) solid;
+    margin-bottom: 3.125rem;
+    margin-top: -4.375rem;
+}
+.profileimagewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 8rem 0 2rem 2rem;
+}
+.profileimagewrapper form{
+    margin-bottom: -3rem;
+}
+
+.infolinks {
+    display: flex;
+}
+.border {
+    height: 0.188rem;
+    width: 50rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+
+
+/* info contato */
+.profileinfosection {
+    margin: 4rem 6rem;
+
+}
+.editinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.editinfo img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 13.125rem ;
+    align-items: center;
+}
+.slogan {
+    margin: 0 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter input{
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.3) 1px solid;
+    width: 21.875rem;
+}
+.newsletter button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-top: 1.875rem;
+}
+.submitnewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+/* ------------------------------ Imagens ----------------------------- */
+#hamburguericon {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+#logo {
+    width: 5rem;
+    height: 6.229rem;
+}
+#searchicon {
+    width: 3.103rem;
+    height: 2.944rem;
+    align-self: center;
+    
+}
+#profileicon {
+    width: 3.938rem;
+    height: 3.938rem;
+}
+#profileimage {
+    width: 19.75rem;
+    height: 19.75rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#shareicon {
+    width: 4.05rem;
+    align-self: flex-start;
+    margin-left: -1.875rem;
+}
+/* project section */
+#projectimage {
+    width: 18.75rem;
+    height: 10.938rem;
+    border-radius: 1.875rem;
+    margin: 0 0.625rem ;
+}
+
+/* footer */
+.slogan img {
+    width: 0.313;
+    height: 6.229rem;
+}
+
+
+
+
+/* ------------------ formatação dos textos ---------------------- */
+/* left section */
+#projetos_sidebtn, #privacidade_sidebtn, #suporte_sidebtn {
+    color: #000000;
+}
+
+/* seção da informação da conta */
+.contawrapper p {
+    font-size: 2.25rem;
+}
+#nome_usr {
+    font-size: 4.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#profissao, #regiao {
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+#profissao {
+    padding-right: 6.25rem;
+}
+#publicarbtn {
+    width: 6.25rem;
+    height: 3.75rem;
+    background-color: transparent;
+    border: 0.188rem solid #7936FC;
+    border-radius: 3.75rem;
+    padding-right: 6.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 6.25rem;
+}
+#publicarbtn a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: #7936FC;
+    padding-left: 6.25rem;
+}
+#projectlink {
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: #7936FC;
+    margin-top: -1.875rem;
+    margin-bottom: 1.875rem;
+}
+#projectlink a {
+    color: #7936FC;
+}
+/* secção do contato */
+.subtitle {
+    font-size: 1.75rem;
+    color: #7936FC;
+}
+
+.general_content {
+    font-size: 1.75rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projectlink {
+    align-self: flex-end;
+    margin-right: 1.25rem;
+}
+
+/* Footer */
+.quicklinks h3, .quicklinks a {
+    white-space: nowrap;
+}
+
+.quicklinks a, .quicklinks li {
+    color: #000000;
+    list-style-type: none;
+    opacity: 0.9;
+}
+.slogan h3 {
+    font-weight: 600;
+    opacity: 0.7;
+}
+.submitnewsletter input {
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 0.3rem;
+    }
+}

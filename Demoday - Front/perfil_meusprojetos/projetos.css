@@ -1,0 +1,342 @@
+/* 07/06 */
+
+/* -- TODOs -- */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+};
+
+
+/* ------------------- Alinhamento e estilização ---------------- */
+/*          Divisão da pag em 2 sections            */
+.content {
+    width: 100%;
+}
+.contentwrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+.leftsection {
+    width: 25%;
+    margin:50px 100px 0 -10px;
+    display: flex;
+    flex-direction: column;
+}
+.leftsectionwrapper a {
+    color: #000000;
+}
+
+/*
+.leftsectionwrapper {
+    position: fixed;
+}
+*/
+.rightsection {
+    width: 60%;
+}
+.sidebtn {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+.sidebtn p {
+    align-self: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 30px;
+    padding-right: 50px;
+}
+.sidebtn img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-left: 50px;
+}
+.sidebtn:hover {
+    background-color: #7936FC;
+    color: #ffffff;
+    border-radius: 0 60px 60px 0;
+}
+.sidebtn:hover p{
+    color: #ffffff;
+}
+#projetos_sidebtn {
+    background-color: #7936FC;
+    border-radius: 0 60px 60px 0;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* Alinhamento e estilização da NAV */
+.navwrapper {
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.875rem;
+    
+}
+.navicon {
+    display: flex;
+}
+#searchbutton {
+    background-color: transparent;
+    border: solid 0.063rem #000000;
+    border-radius: 3.75rem;
+    width: 9.438rem;
+    height: 4.313rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.813rem;
+}
+
+/* filtros */
+.filtermenus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24px;
+    margin-top: 70px;
+}
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.filter img {
+    width: 50px;
+    height: 50px;
+}
+.filter button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    width: 200px;
+    height: 40px;
+    background-color: #c4c4c4;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.dropbtn img {
+    margin-right: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+    background-color: #f9f9f9;
+}
+.dropdown-content button {
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.uploaddate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uploaddate button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: min-content;
+}
+.uploaddate button:hover {
+    background-color: #7936FC;
+}
+.uploaddate img {
+    height: 40px;
+}
+
+/* Project card */
+.projectsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.projectcard {
+    border: 2px solid rgba(0, 0, 0, 0.3) ;
+    padding: 15px;
+    margin: 15px 0;
+    width: 70%;
+    max-height: 450px;
+}
+.projectimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+}
+.projectimages img {
+    width: 300px;
+    height: 200px;
+    margin-right: 15px;
+}
+.cardtitleinfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+#cardtitle {
+    font-size: 24px;
+    color: #7936FC;
+    white-space: nowrap;
+}
+.likes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#likecount {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 30px;
+    color: #E74C3C;
+}
+.cardcontent {
+    margin: 0 30px;
+    overflow-y: hidden;
+}
+#content {
+    font-weight: 500;
+}
+.cardinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px;
+
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 13.125rem ;
+    align-items: center;
+}
+.slogan {
+    margin: 0 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter input{
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.3) 1px solid;
+    width: 21.875rem;
+}
+.newsletter button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-top: 1.875rem;
+}
+.submitnewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.quicklinks h3, .quicklinks a {
+    white-space: nowrap;
+}
+
+.quicklinks a, .quicklinks li {
+    color: #000000;
+    list-style-type: none;
+    opacity: 0.9;
+}
+.slogan h3 {
+    font-weight: 600;
+    opacity: 0.7;
+}
+.submitnewsletter input {
+    font-size: 1.5rem;
+}
+
+/* ------------------------------ Imagens ----------------------------- */
+#hamburguericon {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+#logo {
+    width: 5rem;
+    height: 6.229rem;
+}
+#searchicon {
+    width: 3.103rem;
+    height: 2.944rem;
+    align-self: center;
+    
+}
+#profileicon {
+    width: 3.938rem;
+    height: 3.938rem;
+}
+/* footer */
+.slogan img {
+    width: 0.313;
+    height: 6.229rem;
+}
+
+
+
+
+/* ------------------ formatação dos textos ---------------------- */
+/* left section */
+#privacidade_sidebtn, #suporte_sidebtn {
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 0.3rem;
+    }
+}

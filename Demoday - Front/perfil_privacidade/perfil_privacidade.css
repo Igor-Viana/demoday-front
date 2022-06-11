@@ -1,0 +1,283 @@
+/* 07/06 */
+
+/*  TODOs  */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+};
+/*  Alinhamento e estilização  */
+/* Divisão da pag em 2 sections */
+.content {
+    width: 100%;
+}
+.contentwrapper {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Alinhamento e estilização da NAV */
+.navwrapper {
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.875rem;
+    
+}
+.navicon {
+    display: flex;
+}
+#searchbutton {
+    background-color: transparent;
+    border: solid 0.063rem #000000;
+    border-radius: 3.75rem;
+    width: 9.438rem;
+    height: 4.313rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.813rem;
+}
+/* Left Section */
+.leftsection {
+    width: 25%;
+    margin:50px 100px 0 -10px;
+    display: flex;
+    flex-direction: column;
+}
+.rightsection {
+    width: 60%;
+}
+.sidebtn {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0;
+}
+.sidebtn p {
+    align-self: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 30px;
+    padding-right: 50px;
+    color: #000000;
+}
+.sidebtn img {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-left: 50px;
+}
+#privacidade_sidebtn p, #privacidade_sidebtn{
+    background-color: #7936FC;
+    border-radius: 0 60px 60px 0;
+    color: #ffffff;
+}
+.sidebtn:hover, .sidebtn:hover p {
+    background-color: #7936FC;
+    border-radius: 0 60px 60px 0;
+    color: #ffffff;
+}
+/* Right Section */
+.altpswrd_section, .accountsettings_section {
+    padding: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    margin: 50px 0;
+}
+.altpswrd_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.altpswrd_input {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.altpswrd_input label {
+    font-size: 24px;
+}
+.altpswrd_input input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #eeeeee;
+    margin-top: 15px;
+    font-size: 20px;
+}
+#forgotpswrd {
+    background-color: transparent;
+    border: none;
+    color: #7936FC;
+    cursor: pointer;
+    padding-top: 50px;
+}
+.changepswrd_line {
+    display: flex;
+    justify-content: center;
+}
+#changepswrd, .savebtn {
+    width: 200px;
+    border: 2px solid #7936FC;
+    background-color: #ffffff;
+    color: #7936FC;
+    font-weight: 600;
+    padding: 15px;
+    margin: 50px 0 20px 0;
+    border-radius: 60px;
+    cursor: pointer;
+}
+/* account settings */
+.accountsettings_section {
+    padding-left: 70px;
+}
+.accountsettings_section h3{
+    font-size: 24px;
+}
+.accountsettings_section p {
+    font-size: 18px;
+    margin-left: 30px;
+}
+.accountsettings_input {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second input {
+    border: none;
+    background-color: #c4c4c4;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.labelwrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.labelwrapper label {
+    margin: 15px;
+}
+#cellnum, #emailinfo {
+    padding-left: 10px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.accountsettings_options {
+    display: flex;
+    justify-content: space-around;
+}
+#deleteaccount {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #E74C3C;
+    text-decoration: underline;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 13.125rem ;
+    align-items: center;
+}
+.slogan {
+    margin: 0 6.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter input{
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.3) 1px solid;
+    width: 21.875rem;
+}
+.newsletter button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.7;
+    margin-top: 1.875rem;
+}
+.submitnewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+/*  Imagens  */
+#hamburguericon {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+#logo {
+    width: 5rem;
+    height: 6.229rem;
+}
+#searchicon {
+    width: 3.103rem;
+    height: 2.944rem;
+    align-self: center;
+    
+}
+#profileicon {
+    width: 3.938rem;
+    height: 3.938rem;
+}
+/* footer */
+.slogan img {
+    width: 0.313;
+    height: 6.229rem;
+}
+
+
+
+
+/* ------------------ formatação dos textos ---------------------- */
+/* left section */
+
+
+.subtitle {
+    font-size: 1.75rem;
+    color: #7936FC;
+}
+.general_content {
+    font-size: 1.75rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+}
+/* Footer */
+.quicklinks h3, .quicklinks a {
+    white-space: nowrap;
+}
+
+.quicklinks a, .quicklinks li {
+    color: #000000;
+    list-style-type: none;
+    opacity: 0.9;
+}
+.slogan h3 {
+    font-weight: 600;
+    opacity: 0.7;
+}
+.submitnewsletter input {
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 0.3rem;
+    }
+}
