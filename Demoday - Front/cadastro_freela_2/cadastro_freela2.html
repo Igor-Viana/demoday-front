@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Quase lá!</title>
+    <link rel="stylesheet" href="cadastro_freela2.css">
+</head>
+<body>
+    <div class="section">
+        <div class="section_wrapper">
+            <div class="leftsection">
+                <div class="logo">
+                    <img src="/perfil_visualizado/images/Logo_Roxa.png" alt="Logo">
+                    <div class="inline_txt">
+                        <h2>Falta </h2><h2  class="emphasis">pouco!</h2>
+                    </div>
+                    
+                </div>
+                <form action="" id="form">
+                    <div class="addinput">
+                        <label for="formacao">ÁREA DE FORMAÇÃO:</label>
+                        <div class="inputline">
+                            <input class="input" type="text" name="formacao">
+                            <button><img src="/perfil_visualizado/images/add.png" alt="add_btn"></button>
+                        </div>
+                    </div>
+                    <div class="addinput">
+                        <label for="certificados">CERTIFICADOS:</label>
+                        <div class="inputline">
+                            <input class="input" type="text" name="certificados">
+                            <button><img src="/perfil_visualizado/images/add.png" alt="add_btn"></button>
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <div class="resume_upload">
+                            <label for="resume_upload">CURRÍCULO:</label>
+                            <input type="file" id="resume_upload" name="resume_upload">
+                        </div>
+                        <img  id="upload_img" src="/perfil_visualizado/images/upload.png" alt="upload">
+                        <h3>Ou:</h3>
+                        <div class="resume_url">
+                            <label for="resume_url">URL do Currículo</label>
+                            <input type="text" class="input" name="resume_url" id="resume_url">
+                        </div>
+                    </div>
+                    <div class="addinput">
+                        <div class="inputline">
+                            <label for="portifolio">PORTIFÓLIO (link):</label>
+                            <input class="input" type="text" name="portifolio">
+                        </div>
+                        <label for="interesse">ÁREAS DE INTERESSE</label>
+                        <div class="inputline">
+                            <input class="input" type="text" name="interesse">
+                            <button><img src="/perfil_visualizado/images/add.png" alt="add_btn"></button>
+                        </div>
+                    </div>
+                    <div class="submit_wrapper">
+                        <button type="submit" id="submit_btn">FINALIZAR</button>
+                        <!-- arranjar alguma maneira de o botão resetar os inputs registrados e voltar atras -->
+                        <button type="reset" id="return_btn"><img src="/perfil_visualizado/images/btn-esquerdo.png" alt="next_btn" id="next_btn"></button>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="rightsection">
+                <img src="/perfil_visualizado/images/foto-usuaria.jpg" alt="logon_img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
